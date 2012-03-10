@@ -29,13 +29,13 @@
   
   <div id="presentation">
      <div id="flakes">
-  	 <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+  	 <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
   </div>
    <div id="presentation-counter"></div>
    
   <div class="slide transparent intro">
      <div class="snowman"></div> 
-     <header><h1><b>Merry Christmas<br/>&amp;<br/>Happy New Year</b></h1></header> 
+     <header><h1></h1></header> 
      <section class="content"> 
      
      </section>
@@ -51,7 +51,25 @@ without JavaScript<br>
      </header>
     </div> 
     
-     
+     <div class="slide intro">
+     <header>
+      <h1><b>CSS3</b> <br>
+Making it rain with<br>
+ dark, depressing clouds<br>
+at SXSW 2012</h1>
+     </header>
+     <button onClick="document.getElementsByTagName('body')[0].classList.toggle('rain');">Click</button>
+    </div>
+    
+    <div class="slide intro"> 
+     <header>
+      <h1><b>CSS3</b> <br>
+Making big bucks with<br>
+CSS3 Mad Skillz</h1>
+     </header>
+     <button onClick="document.getElementsByTagName('body')[0].classList.remove('rain');
+     document.getElementsByTagName('body')[0].classList.toggle('money');">Click</button>
+    </div>    
     
 
     
@@ -283,7 +301,7 @@ E > F	Child</li>
 E + F	Adjacent sibling</li>	
 <li>
 E ~ F   sibling</li>
-<li>	
+	
 </ul>
     </section>
 </div> 
@@ -763,6 +781,7 @@ hsla(216, 49%, 45%, 0.5);
 <div class="slide"> 
 <header><h1>transforms</h1></header> 
 <section class="content">
+<ul>
 <li>Vendor prefix all of 'em</li>
 <li>Take advantage of transform-origin</li>
 <li>Multiple values are SPACE separated (no commas)</li>
@@ -770,7 +789,7 @@ hsla(216, 49%, 45%, 0.5);
 <li>Play with <a href="http://westciv.com/tools/transforms/index.html">Westciv's Transform Tool</a></li> 
 <li><a href="http://meyerweb.com/eric/tools/matrix/">Matrix</a> is another syntax</li>
 <li>More about <a href="http://www.standardista.com/css3/css3-transform-property-and-the-various-transform-functions">transforms</a></li>
-</section>
+</ul>
 </section>
 </div>
      
@@ -831,9 +850,6 @@ code:hover {
 
 <div class="slide"> 
 <header><h1>animations</h1></header> 
-<section class="content"> 
-
-</section>
 </div>
      
   
@@ -1431,7 +1447,7 @@ cubic-bezier(x1, y1, x2, y2)</pre>
   <u></u>animation-delay: 2s;
   <del><u></u>animation-direction: normal;</del>
 }</pre>
-<p>. . . can also be written as . . .
+<p>. . . can also be written as . . .</p>
 <pre contenteditable>
 .snowflake {
   ...
@@ -1454,9 +1470,6 @@ cubic-bezier(x1, y1, x2, y2)</pre>
     
 <div class="slide"> 
 <header><h1>What happens at animation end?</h1></header> 
-<section class="content"> 
-
-</section>
 </div>
      
      
@@ -1478,7 +1491,7 @@ cubic-bezier(x1, y1, x2, y2)</pre>
  <b> -moz-animation-fill-mode: forwards;</b>
  <b> -ms-animation-fill-mode: forwards;</b>
 }</pre>
-<p style="margin:-10px 0">. . . or . . .<span style="float: right; font-size: 80%"><span onClick="vendorPrefix('w', 'animfm')">-webkit-</span><span onClick="vendorPrefix('r', 'animfm')"> | </span> <span onClick="vendorPrefix('m', 'animfm')">-moz-</span><span onClick="vendorPrefix('r', 'animfm')"> | </span> <span onClick="vendorPrefix('ms', 'animfm')">-ms-</span> </p>
+<p style="margin:-10px 0">. . . or . . .<span style="float: right; font-size: 80%"><span onClick="vendorPrefix('w', 'animfm')">-webkit-</span><span onClick="vendorPrefix('r', 'animfm')"> | </span> <span onClick="vendorPrefix('m', 'animfm')">-moz-</span><span onClick="vendorPrefix('r', 'animfm')"> | </span> <span onClick="vendorPrefix('ms', 'animfm')">-ms-</span> </span>
 </p>
 <pre contenteditable>
 .snowflake {
@@ -1505,9 +1518,9 @@ cubic-bezier(x1, y1, x2, y2)</pre>
  <b> -ms-animation-fill-mode: backwards;</b>
 }</pre>
 <p>. . . or . . .<span style="float: right; font-size: 80%"><span onClick="vendorPrefix('w', 'animfm2')">-webkit-</span><span onClick="vendorPrefix('r', 'animfm2')"> | </span> <span onClick="vendorPrefix('m', 'animfm2')">-moz-</span> 
-<span onClick="vendorPrefix('r', 'animfm2')"> | </span> <span onClick="vendorPrefix('ms', 'animfm2')">-ms-</span> 
+<span onClick="vendorPrefix('r', 'animfm2')"> | </span> <span onClick="vendorPrefix('ms', 'animfm2')">-ms-</span></span>
 </p>
-</p>
+
 <pre contenteditable>
 .snowflake {
  -webkit-animation: falling 3s ease-in-out 2s 3  <b>backwards</b>;
@@ -1518,8 +1531,8 @@ cubic-bezier(x1, y1, x2, y2)</pre>
 </section>
 </div>
     
- 
- 
+
+
  <div class="slide" id="animfm3"> <i></i>
 <header><h1>&lsquo;animation-fill-mode: both&rsquo;</h1></header> 
 <section class="content"> 
@@ -1536,7 +1549,7 @@ cubic-bezier(x1, y1, x2, y2)</pre>
 <p>. . . or . . .<span style="float: right; font-size: 80%"><span onClick="vendorPrefix('w', 'animfm3')">-webkit-</span>
 <span onClick="vendorPrefix('r', 'animfm3')"> | </span> <span onClick="vendorPrefix('m', 'animfm3')">-moz-</span> 
 <span onClick="vendorPrefix('r', 'animfm3')"> | </span> <span onClick="vendorPrefix('ms', 'animfm3')">-ms-</span> 
-</p>
+</span>
 </p>
 <pre contenteditable>
 .snowflake {
@@ -1555,7 +1568,7 @@ cubic-bezier(x1, y1, x2, y2)</pre>
 	<div class="box">animation-fill-mode: forwards;<span class="afmforwards"></span></div>
 	<div class="box">animation-fill-mode: backwards;<span class="afmbackwards"></span></div>
     <div class="box">animation-fill-mode: both;<span class="afmboth"></span></div>
-    <pre>.box { animation: showme 5s linear 5s 1;}
+    <pre contenteditable>.box { animation: showme 5s linear 5s 1;}
 @keyframes showme {
 	0% {left: 200px; background-color:blue;}
 	50% {background-color:green;}
@@ -1565,11 +1578,8 @@ cubic-bezier(x1, y1, x2, y2)</pre>
 </div>
 
     
- <div class="slide"> 
+<div class="slide"> 
 <header><h1>Can you stop an animation?</h1></header> 
-<section class="content"> 
-
-</section>
 </div>
     
      
@@ -2047,6 +2057,6 @@ function vendorPrefix(prefix, id){
   src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
   <script>CFInstall.check({ mode: "overlay" });</script>
   <![endif]--> 
- 
+
   </body> 
 </html>
